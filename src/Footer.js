@@ -15,7 +15,9 @@ export default function Footer() {
   };
   return (
     <div className="footer">
-      <h1>LiveDoc</h1>
+      <a href="https://sameerfa.github.io/livedoc" className="logo">
+        <h1>LiveDoc</h1>
+      </a>
       <a href="https://github.com/sameerfa/livedoc/tree/master">
         <Button>
           <GitHub />

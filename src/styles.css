@@ -9,6 +9,11 @@ body {
   margin: 0;
 }
 
+.logo {
+  text-decoration: none;
+  color: #2d334a;
+}
+
 .container .ql-editor {
   width: 100%;
   min-height: 11in;
@@ -27,13 +32,13 @@ body {
 
 .container .ql-toolbar.ql-snow {
   display: flex;
-  justify-content: center;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 999;
   background-color: #e3f6f5;
   border: none;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
