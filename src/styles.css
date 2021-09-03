@@ -1,18 +1,20 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #F3F3F3;
+  background-color: #fffffe;
   margin: 0;
 }
 
 .container .ql-editor {
-  width: 8.5in;
+  width: 100%;
   min-height: 11in;
-  padding: 1in;
+  padding: 40px;
   margin: 1rem;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   background-color: white;
 }
 
@@ -20,6 +22,7 @@ body {
   border: none;
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
 .container .ql-toolbar.ql-snow {
@@ -28,9 +31,49 @@ body {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: #F3F3F3;
+  background-color: #e3f6f5;
   border: none;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #bae8e8;
+  color: #2d334a;
+  cursor: pointer;
+  font-size: smaller;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+
+.modal {
+  position: absolute;
+  bottom: 200px;
+  width: 80%;
+  background-color: #fffffe;
+  color: #2d334a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal .button {
+  color: #272343;
+  background-color: #bae8e8;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.footer .MuiSvgIcon-root {
+  width: 20px;
+  height: 20px;
+  color: #2d334a;
 }
 
 @page {
@@ -52,6 +95,10 @@ body {
   }
 
   .container .ql-toolbar.ql-snow {
+    display: none;
+  }
+
+  .footer {
     display: none;
   }
 }

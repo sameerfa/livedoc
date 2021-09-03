@@ -6,6 +6,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import { v4 as uuidV4 } from "uuid";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <TextEditor />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
