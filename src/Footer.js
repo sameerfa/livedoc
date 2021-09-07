@@ -34,13 +34,16 @@ export default function Footer() {
           <h2>Howdy, partner!</h2>
           <ul>
             <li>
+              Skip taking up huge chunks of your storage for temporary
+              documents.
+            </li>
+            <li>
               You can share this document with your friends to collaborate live.
             </li>
             <li>
-              Data will be saved for a week. You can access it using the same
-              link.
+              Download file as PDF when you're done. The link will still work
+              when you visit later.
             </li>
-            <li>You can download/ print file as PDF too.</li>
           </ul>
           <div>
             <Button className="button" onClick={copy}>
